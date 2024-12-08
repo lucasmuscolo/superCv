@@ -1,0 +1,1 @@
+hacer el componente principal donde se llaman a los componentes que construyen el cv principal
