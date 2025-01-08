@@ -1,0 +1,17 @@
+import { EducationComponentComponent } from './education-component/education-component.component';
+import { ExperienceComponentComponent } from './experience-component/experience-component.component';
+import { FooterComponentComponent } from './footer-component/footer-component.component';
+import { HeaderComponentComponent } from './header-component/header-component.component';
+import { ProfileComponentComponent } from './profile-component/profile-component.component';
+import { ProjectsComponentComponent } from './projects-component/projects-component.component';
+import { SkillsComponentComponent } from './skills-component/skills-component.component';
+
+export const SHARED_IMPORTS = [
+  EducationComponentComponent,
+  ExperienceComponentComponent,
+  FooterComponentComponent,
+  HeaderComponentComponent,
+  ProfileComponentComponent,
+  ProjectsComponentComponent,
+  SkillsComponentComponent
+];
