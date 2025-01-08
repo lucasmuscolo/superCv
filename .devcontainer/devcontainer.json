@@ -1,0 +1,25 @@
+{
+    "name": "Angular Development Environment",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "angular.ng-template",
+                "dbaeumer.vscode-eslint",
+                "esbenp.prettier-vscode",
+                "ms-vscode.vscode-typescript-tslint-plugin",
+                "ms-azuretools.vscode-docker"
+            ],
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "JavaScript Debug Terminal",
+                "editor.formatOnSave": true
+            }
+        }
+    },
+    "forwardPorts": [4200],
+    "postCreateCommand": "npm install",
+    "remoteUser": "node"
+}
