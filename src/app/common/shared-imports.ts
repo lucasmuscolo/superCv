@@ -6,6 +6,10 @@ import { PhotoComponentComponent } from './photo-component/photo.component';
 import { ProfileComponentComponent } from './profile-component/profile-component.component';
 import { ProjectsComponentComponent } from './projects-component/projects-component.component';
 import { SkillsComponentComponent } from './skills-component/skills-component.component';
+import { CardModule } from 'primeng/card';
+import { DividerModule } from 'primeng/divider';
+import { ImageModule } from 'primeng/image';
+import { PanelModule } from 'primeng/panel';
 
 export const SHARED_IMPORTS = [
   EducationComponentComponent,
@@ -15,5 +19,9 @@ export const SHARED_IMPORTS = [
   PhotoComponentComponent,
   ProfileComponentComponent,
   ProjectsComponentComponent,
-  SkillsComponentComponent
+  SkillsComponentComponent,
+  CardModule,
+  DividerModule,
+  ImageModule,
+  PanelModule
 ];
