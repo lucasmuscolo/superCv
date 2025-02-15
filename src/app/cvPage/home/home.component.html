@@ -1,7 +1,23 @@
-<app-header-component></app-header-component>
-<app-profile-component></app-profile-component>
-<app-experience-component></app-experience-component>
-<app-education-component></app-education-component>
-<app-skills-component></app-skills-component>
-<app-projects-component></app-projects-component>
-<app-footer-component></app-footer-component>
+<div class="container">
+    <div class="header">
+        <app-header-component></app-header-component>
+    </div>
+    
+    <div class="content">
+        <div class="col-left">
+            <app-photo-component></app-photo-component>
+            <app-profile-component></app-profile-component>
+            <app-skills-component></app-skills-component>
+        </div>
+        
+        <div class="col-right">
+            <app-experience-component></app-experience-component>
+            <app-education-component></app-education-component>
+            <app-projects-component></app-projects-component>
+        </div>
+    </div>
+
+    <div class="footer">
+        <app-footer-component></app-footer-component>
+    </div>
+</div>
