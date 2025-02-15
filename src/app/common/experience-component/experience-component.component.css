@@ -1,0 +1,13 @@
+p-panel .ui-panel-titlebar {
+    font-size: 14px; /* Ajusta el tamaño de la fuente del título del panel */
+    padding: 1px; /* Ajusta el espaciado del título del panel */
+}
+
+p-panel .ui-panel-content {
+    font-size: 12px; /* Ajusta el tamaño de la fuente del contenido del panel */
+    padding: 30px; /* Ajusta el espaciado del contenido del panel */
+}
+
+p-card {
+    margin-bottom: 10px; /* Ajusta el margen inferior de la tarjeta */
+}

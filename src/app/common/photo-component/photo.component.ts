@@ -5,9 +5,9 @@ import { SHARED_IMPORTS } from '../shared-imports';
   selector: 'app-photo-component',
   standalone: true,
   imports: [SHARED_IMPORTS],
-  templateUrl: './photo-component.component.html',
-  styleUrls: ['./photo-component.component.css']
+  templateUrl: './photo.component.html',
+  styleUrl: './photo.component.css'
 })
 export class PhotoComponentComponent {
-  // Tu lógica aquí
+
 }
