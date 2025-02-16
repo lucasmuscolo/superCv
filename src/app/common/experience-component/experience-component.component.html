@@ -1,26 +1,37 @@
-
-    <div class="experience-container">
-        <div class="experience-header">Experience</div>
-        <div class="scrollable-content">
-            <p-panel header={{tituloExperiencia1}}
-                     [toggleable]="true"
-                     [collapsed]="true"
-                     styleClass="custom-panel">
-                <p>{{textoExperiencia}}</p>
-            </p-panel>
-            
-            <p-panel header={{tituloExperiencia2}}
-                     [toggleable]="true"
-                     [collapsed]="true"
-                     styleClass="custom-panel">
-                <p>{{textoExperiencia}}</p>
-            </p-panel>
-            
-            <p-panel header={{tituloExperiencia3}}
-                     [toggleable]="true"
-                     [collapsed]="true"
-                     styleClass="custom-panel">
-                <p>{{textoExperiencia}}</p>
-            </p-panel>
-        </div>
+<div class="experience-container">
+    <div class="experience-header">Experience</div>
+    <div class="scrollable-content">
+        <p-panel *ngFor="let experience of experiences"
+                 [header]="experience.position + ' at ' + experience.company"
+                 [toggleable]="true"
+                 [collapsed]="true"
+                 styleClass="custom-panel">
+            <p>
+                {{experience.startDate | date:'MMM yyyy'}} - {{experience.endDate | date:'MMM yyyy'}}<br>
+                {{experience.description}}
+            </p>
+        </p-panel>
     </div>
+</div>
+
+
+<!-- <p-panel header={{tituloExperiencia1}}
+    [toggleable]="true"
+    [collapsed]="true"
+    styleClass="custom-panel">
+<p>{{textoExperiencia}}</p>
+</p-panel>
+
+<p-panel header={{tituloExperiencia2}}
+    [toggleable]="true"
+    [collapsed]="true"
+    styleClass="custom-panel">
+<p>{{textoExperiencia}}</p>
+</p-panel>
+
+<p-panel header={{tituloExperiencia3}}
+    [toggleable]="true"
+    [collapsed]="true"
+    styleClass="custom-panel">
+<p>{{textoExperiencia}}</p>
+</p-panel> -->

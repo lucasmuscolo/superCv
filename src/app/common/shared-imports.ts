@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { EducationComponentComponent } from './education-component/education-component.component';
 import { ExperienceComponentComponent } from './experience-component/experience-component.component';
 import { FooterComponentComponent } from './footer-component/footer-component.component';
@@ -12,6 +13,7 @@ import { ImageModule } from 'primeng/image';
 import { PanelModule } from 'primeng/panel';
 
 export const SHARED_IMPORTS = [
+  CommonModule,
   EducationComponentComponent,
   ExperienceComponentComponent,
   FooterComponentComponent,
