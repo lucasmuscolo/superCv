@@ -1,19 +1,26 @@
-<p-card header="Experience Card">
-    <p-panel header={{tituloExperiencia1}}
-             [toggleable]="true" 
-             [collapsed]="true"> 
-        <p>{{textoExperiencia}}</p>
-    </p-panel>
 
-    <p-panel header={{tituloExperiencia2}}
-             [toggleable]="true" 
-             [collapsed]="true"> 
-        <p>{{textoExperiencia}}</p>
-    </p-panel>
-
-    <p-panel header={{tituloExperiencia3}}
-             [toggleable]="true" 
-             [collapsed]="true">
-        <p>{{textoExperiencia}}</p>
-    </p-panel>
-</p-card>
+    <div class="experience-container">
+        <div class="experience-header">Experience</div>
+        <div class="scrollable-content">
+            <p-panel header={{tituloExperiencia1}}
+                     [toggleable]="true"
+                     [collapsed]="true"
+                     styleClass="custom-panel">
+                <p>{{textoExperiencia}}</p>
+            </p-panel>
+            
+            <p-panel header={{tituloExperiencia2}}
+                     [toggleable]="true"
+                     [collapsed]="true"
+                     styleClass="custom-panel">
+                <p>{{textoExperiencia}}</p>
+            </p-panel>
+            
+            <p-panel header={{tituloExperiencia3}}
+                     [toggleable]="true"
+                     [collapsed]="true"
+                     styleClass="custom-panel">
+                <p>{{textoExperiencia}}</p>
+            </p-panel>
+        </div>
+    </div>

@@ -1,13 +1,34 @@
-p-panel .ui-panel-titlebar {
-    font-size: 14px; /* Ajusta el tamaño de la fuente del título del panel */
-    padding: 1px; /* Ajusta el espaciado del título del panel */
+
+.experience-container {
+    width: 100%;
+    aspect-ratio: 4/1;
+    position: relative;
+    display: block;
+    background-color: white;
+    border-radius: 6px;
 }
 
-p-panel .ui-panel-content {
-    font-size: 12px; /* Ajusta el tamaño de la fuente del contenido del panel */
-    padding: 30px; /* Ajusta el espaciado del contenido del panel */
+.experience-header {
+    padding: 1rem;
+    font-weight: 700;
 }
 
-p-card {
-    margin-bottom: 10px; /* Ajusta el margen inferior de la tarjeta */
+.scrollable-content {
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+    padding-left: 5%;
+    padding-right: 5%;
 }
+
+:host ::ng-deep .custom-panel .p-panel-header {
+    padding: 0.4rem; /* Reduce el padding del header */
+    margin-bottom: 4px;
+  }
+  
+  :host ::ng-deep .custom-panel .p-panel-content {
+    padding: 0.4rem; /* Reduce el padding del contenido */
+  }
